@@ -1,0 +1,109 @@
+Constante linha 8 - #define pfds 10
+
+Variaveis linha 11 din ,12 nomep end dc,13 dds c i ii ,21 nome grav gen music preco ano resp, 22  nome grav gen music preco ano resp, 68 tm, 69 tm_sec, 70 tm_min, 71 tm_hour, 72 tm_mday, 73 tm_mon, 74 tm_year, 75 tm_wday, 76 tm_yday, 77 tm_isdst, 90 num est
+
+Operações aritméticas linha 31  preco=preco-pfds ,42 din=din-preco
+
+Operações logica linha 143 (num>4 || num<1)
+
+Comandos de atribuição linha 86 data_hora_atual = localtime(&segundos), 88  dds= data_hora_atual->tm_wday
+
+Comandos de entrada e saída linha 23 a 27
+printf("-> Nome do disco: %s\n",nome)
+   printf("-> Gênero Musical: %s\n",gen)
+   printf("-> Gravadora do disco: %s\n",grav)
+   printf("-> Ano de lançamento: %d\n",ano)
+   printf("-> Músicas: %s\n",music) 
+32 printf("-> Preço: %d\n",preco), 
+35 printf("-> Preço: %d\n",preco)
+37 printf("\nTem certeza que quer continuar com a compra? Digite 1 para sim e finalizar a compra, 2 para não e 3 para adicioná-lo ao carrinho\n")
+41  printf("\nCompra realizada com sucesso e será entregue para sua casa no endereço '%s' entre 20 e 30 dias\nObrigado e volte sempre %s!\n",end,nomep)
+55 printf("Disco adicionado com sucesso! Saldo Atual: %.2f\n",din)
+59 printf("Não foi possível adicionar o disco ao carrinho;o seu dinheiro atual (%.2f) não é suficiente\n",din)
+140 printf("\nAos fins de semana temos %d.00 reais de desconto em todos os discos\nPressione o número mostrado para abrir a página indicada\nSe não houver um cadastro, por favor faça apertando o número 1\n\n 1- Cadastro\n 2- Estoque Atual\n 3- Carrinho\n 4- Sair\n\n",pfds)
+144 printf("Opção inválida\n")
+155 printf("\nInsira seu nome: ")
+158 printf("\nInforme quanto você está disposto a gastar: ")
+161 printf("\nInforme o endereço desejado para entrega das compras: ")
+170 printf("Você tem %d discos no carrinho, são eles:\n",c)
+172 printf("%s\n",dc[ii])
+174 printf("\nAperte 1 para finalizar a compra ou 2 para continuar comprando: ")
+177 printf("\nCompra finalizada com sucesso! Os discos serão entregues entre 20 e 30 dias no endereço '%s'.\nObrigado e volte sempre %s!\n", end,nomep)
+189 printf(" Digite o número indicado para prosseguir com a compra de tal disco ou qualquer outro para voltar\n O estoque atual é:\n")
+190 printf(" 1- Queen\n 2- Gorillaz\n 3- Kiss\n 4- Anastacia\n 5- Iron Maiden\n 6- Pink Floyd\n 7- Tame Impala\n 8- Adele\n 9- Katy Perry\n 10- Dire Straits\n 11- Sair\n 
+
+
+Estrutura condicional simples e/ou estrutura condicional composta e/ou estrutura condicional de múltipla escolha linha, 
+30 if(dds==6 || dds==7), 
+34 else, 39 if (resp==1), 
+40 if (resp==1), 
+45 else, 50 if(resp==3), 
+51 if(preco<=din), 
+58 else, 
+116 a 137 
+    switch(dds){ //mostrará o dia da semana (hoje)
+       case 1:
+    printf("\nDia da semana: Segunda\n");
+    break;
+       case 2:
+    printf("\nDia da semana: Terça\n");
+    break;
+        case 3:
+    printf("\nDia da semana: Quarta\n");
+    break;
+        case 4:
+    printf("\nDia da semana: Quinta\n");
+    break;
+        case 5:
+    printf("\nDia da semana: Sexta\n");
+    break;
+        case 6:
+    printf("\nDia da semana: Sábado\n");
+    break;
+        case 7:
+    printf("\nDia da semana: Domingo\n");
+    break;, 
+143 if(num>4 || num<1)
+149 if(num==4)
+153 if(num==4)
+168 if(num==3)
+176 if(num==1)
+180 else
+186 if(num==2)
+193 a 228
+switch(est){ //dependendo da opção selecionada ele mostrará as informações de acordo com o VOID
+
+    case 1:
+    discos("Greatest Hits","Hollywood Records","Rock","Bohemian Rhapsody, Another One Bites The Dust, Killer Queen, Fat Bottomed Girls, Bicycle Race, You're My Best Friend, Don't Stop Me Now, Save Me, Crazy Little Thing Called Love, Somebody To Love, Now I'm Here, Good Old-Fashioned Lover Boy, Play the Game, Flash, Sevens Seas Of Rhye, We Will Rock You, We Are The Champions",400.09,1981,0);
+    break;
+    case 2:
+    discos("Gorillaz","Parlophone","Electropop","Re-Hash, 5/4, Tomorrow Comes Today, New Genius(Brother), Clint Eastwood, Man Research(Clapper), Punk, Sound Check(Gravity), Double Bass, Rock The House, 19-2000 Latin Simone(Que Pasa Contigo), Starshine,Slow Country, M1 A1",135.00,2001,0);
+    break;
+    case 3:
+    discos("Hot In The Shade","Mercury","Rock/Hard Rock","Rise To It, Betrayed, Hide Your Heart, Prisoner Of Love, Read My Body, Love's A Slap in The Face, Forever, Silver Spoon, Cadillac Dreams, King Of Hearts, The Street Giveth And TheStreet Taketh Away, You Love Me to Hate you, Somewhere Between Heaven And Hell, Little Casear, Boomerang ",145.14,1989,0);
+    break;
+    case 4:
+    discos("Pieces of A Dream","Sony BMG Music Entertainment","Rock/Pop","I'm Outta Love, Not That Kind, Cowboys & Kisses, Made For Lovin' You,Paid My Dues, One Day In Your Life, Why'd You Lie to Me, You'll Never Be Alone, Left Outside Alone, Sick And Tired, Heavy On My Heart, Everything Burns, Pieces of a Dream, In Your Eyes, Club Megamix",48.00,1999,0);
+    break;
+    case 5:
+    discos("Seventh Son of a Seventh Son","Capitol Records","Heavy Metal","Moonchild, Infinite Dreams, Can I Play with Madness, The Evil That Men Do, Seventh Son of a Seventh Son, The Prophecy, The Clairvoyant, Only The Good Die Young",149.00,1988,0);
+    break;
+    case 6:
+    discos("The Dark Side of the Moon","Capitol Records","Rock Clássico","Speak To Me, Breathe(In the Air), On the Run, Time, The Great Gig In the Sky, Money, Us and Them, Any Colour You Like, Brain Damage, Eclipse",376.50,1973,0);
+    break;
+    case 7:
+    discos("Currents","Modular Recordings","Ambiente","Let It Happen, Nangs, The Moment, Yes I'm Changing, Eventually, Gossip, The Less I know The Better, Past Life, Disciples, 'Cause I'm A Man, Reality In Motion, Love/Paranoia, New Person, Same Old Mistakes",345.00,2015,0);
+    break;
+    case 8:
+    discos("21","XL Recordings Ltd","Pop","Rolling in the Deep, Rumour Has It, Turning Tables, Don't You Remember, Set  Fire to the Rain, He Won't Go, Take It All, I'll Be Waiting, One And Only, Lovesong, Someone Like You" ,190.63,2011,0);
+    break;
+    case 9:
+    discos("Prism","Capitol records, LLC","Pop","Roar, Legendary Lovers, Birthday, Walking On Air, Unconditionally, Dark Horse, This Is How We Do, International Smile, Ghost, Love Me, This is Moment, Double Rainbow, By The Grace of God, Spiritual, It Takes Two, Choose Your Battles",108.00,2013,0);
+    break;
+    case 10:
+    discos("Brothers in Arms","Mercury Records Limited","Rock","So Far Away, Money for Nothing, Walk Of Life, Your Latest Trick, Why Worry?, Ride Across The River, The Man's Too Strong, One World, Brothers In Arms",407.22,1985,0);
+    break;
+
+    default:
+        system("cls");
+    break;
